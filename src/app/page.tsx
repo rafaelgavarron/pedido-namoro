@@ -32,8 +32,8 @@ export default function App() {
     },
     {
       text: 'Quem é mais bagunceiro?',
-      options: ['Eu', 'Você', 'Os dois igual', 'Nenhum dos dois'],
-      correct: 0,
+      options: ['Nnhum dos dois', 'Você', 'Os dois igual', 'Eu'],
+      correct: 3,
     },
     {
       text: 'Qual é o dia que a gente se conheceu pessoalmente?',
