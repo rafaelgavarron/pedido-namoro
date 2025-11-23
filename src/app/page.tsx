@@ -68,7 +68,7 @@ export default function App() {
   const [noBtnStyle, setNoBtnStyle] = useState({});
 
   // --- LÓGICA DO QUIZ ---
-  const handleAnswer = (idx: number | React.SetStateAction<null>) => {
+  const handleAnswer = (idx) => {
     const question = questions[currentQuestion];
     const isCorrect = idx === question.correct;
 
