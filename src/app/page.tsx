@@ -59,21 +59,22 @@ export default function App() {
 
   // --- ESTADOS ---
   // Inicia no estágio 'terms'
-  const [stage, setStage] = useState('terms'); // 'terms', 'quiz', 'proposal', 'accepted'
+  const [stage, setStage] = useState<
+    'terms' | 'quiz' | 'proposal' | 'accepted'
+  >('terms');
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [wrongIndex, setWrongIndex] = useState(null);
+  const [wrongIndex, setWrongIndex] = useState<number | null>(null);
 
   // Estados do Pedido
   const [noCount, setNoCount] = useState(0);
-  const [noBtnStyle, setNoBtnStyle] = useState({});
+  const [noBtnStyle, setNoBtnStyle] = useState<React.CSSProperties>({});
 
   // --- LÓGICA DO QUIZ ---
-  const handleAnswer = (idx) => {
+  const handleAnswer = (idx: number) => {
     const question = questions[currentQuestion];
     const isCorrect = idx === question.correct;
 
     if (isCorrect) {
-      setWrongIndex(null);
       if (currentQuestion < questions.length - 1) {
         setCurrentQuestion(currentQuestion + 1);
       } else {
