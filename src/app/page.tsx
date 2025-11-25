@@ -17,7 +17,12 @@ export default function App() {
   const questions = [
     {
       text: 'Quem é mais provável de comer o último pedaço de pizza?',
-      options: ['Eu', 'Você', 'Dividimos sempre', 'Quem pegar primeiro'],
+      options: [
+        'Eu (Rafael)',
+        'Você (Letícia)',
+        'Dividimos sempre',
+        'Quem pegar primeiro',
+      ],
       correct: 0,
     },
     {
@@ -32,7 +37,12 @@ export default function App() {
     },
     {
       text: 'Quem é mais bagunceiro?',
-      options: ['Nnhum dos dois', 'Você', 'Os dois igual', 'Eu'],
+      options: [
+        'Nnhum dos dois',
+        'Você (Letícia)',
+        'Os dois igual',
+        'Eu (Rafael)',
+      ],
       correct: 3,
     },
     {
