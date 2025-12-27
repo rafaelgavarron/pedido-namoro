@@ -30,7 +30,7 @@ export default function App() {
       options: [
         'Ver filmes/séries',
         'Sair para comer',
-        'Dormir de conchinha 👀',
+        'Ficar passeando na rua',
         'Jogar',
       ],
       correct: 2,
